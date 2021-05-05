@@ -1,0 +1,265 @@
+/********************************* 
+ * Table of contents:
+ * 
+ * Base styles ("raw" elements)
+ *   Root
+ *   Typography
+ *   Links
+ *   Images
+ * Main section
+ * Header
+ *   Logo
+ *   Menu
+ * Footer
+ * About Us banner 
+ * Reviews
+ * Image gallery
+ * Columns
+ ***********************************/
+
+/* 
+ Colors:
+  blue: #26547c
+  red: #ef476f
+  yellow: #ffd166
+  green: #06d6a0
+  white: #fffcf9
+ */
+
+/************** 
+ * Base styles
+ **************/
+
+/* Root styles */
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  line-height: 1.5;
+  color: #26547c;
+  background-color: #fffcf9;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Typography */
+
+h1,
+h2 {
+  font-family: "Shadows Into Light", cursive;
+  margin: 0 0 1em 0;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+/* Links */
+
+a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #26547c;
+}
+
+a:hover,
+a:focus {
+  color: #ef476f;
+}
+
+/* Images */
+
+img {
+  max-width: 100%;
+}
+
+.full {
+  width: 100%;
+}
+
+/************** 
+ * Global styling
+ **************/
+
+header,
+main,
+footer,
+.gallery,
+.reviews {
+  padding: 3rem;
+  margin-bottom: 3rem;
+}
+
+/************** 
+ * Main section
+ **************/
+
+main {
+  background-color: #ffd166;
+}
+
+/************** 
+ * Header
+ **************/
+
+header {
+  background-color: #06d6a0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+/* Logo */
+.logo {
+  flex: 0 1 80px;
+  min-width: 40px;
+}
+
+/* Menu */
+.menu {
+  flex: 0 1 auto;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.menu li {
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.menu a {
+  color: #fffcf9;
+  background-color: #06d6a0;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #fffcf9;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  box-sizing: border-box;
+}
+
+.menu a:hover,
+.menu a:focus {
+  color: #06d6a0;
+  background-color: #fffcf9;
+}
+
+/************** 
+ * Footer
+ **************/
+
+footer {
+  background-color: #06d6a0;
+  color: #fffcf9;
+}
+
+/************** 
+ * Reviews
+ **************/
+
+.reviews {
+  background-color: #26547c;
+  color: #fffcf9;
+}
+
+.reviews ul {
+  margin: 0;
+  padding: 0;
+}
+
+.reviews li {
+  margin-bottom: 0.75em;
+}
+
+/************** 
+ * Image gallery
+ **************/
+.gallery {
+  background-color: #ef476f;
+  color: #fffcf9;
+}
+
+.gallery ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery li {
+  flex: 1 0 150px;
+  padding: 0.75rem;
+}
+
+/************** 
+ * Columns
+ **************/
+
+.layout-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.layout-item {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.layout-item:first-child {
+  flex: 1 0 20%;
+}
+
+.layout-item:last-child {
+  flex: 1 0 60%;
+}
+
+/****************** 
+ * About Us banner
+ ******************/
+
+.about-banner {
+  background-image: url(images/hour-glass-red.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  min-height: 300px;
+  max-height: 60vh;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.about-banner h1 {
+  background-color: #06d6a0;
+  color: #fffcf9;
+  margin: 0;
+  padding: 0.5em 1em;
+}
